@@ -31,7 +31,7 @@ app.use(express.json());
 app.post('/login', (request, response) => {
 
     let sql;
-    sql = `SELECT id_user_book,name,lastName,email,url FROM user WHERE email= 
+    sql = `SELECT id_user_book,name,lastName,email,url FROM user_book WHERE email= 
     "${request.body.email}" AND password= "${request.body.password}"`
     console.log(request.body)
     console.log(sql);
